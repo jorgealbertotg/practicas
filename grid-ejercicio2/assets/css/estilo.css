@@ -1,0 +1,198 @@
+
+    main {
+      
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+  
+    }
+    section {
+      height:70vh;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+    }
+    section header {
+      text-align: right;
+      grid-row: 1 / span 1;
+      background-color: #004782 ;
+    }
+    section article {
+      grid-row: 2 / span 4;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows:70px auto 50px;
+      align-self: center;
+    }
+    section article h2 {
+      text-align: center;
+    }
+    section article p:not(.button) {
+      text-align: justify;
+      padding: 16px;
+    }
+    section article p.button {
+      text-align: center;
+      align-self: end;
+      justify-self: center;
+    }
+    input {
+      
+      width: 400px;
+      background-color: #004782 ;
+      color: #FFF;
+      align-self: center;
+      justify-self: center;
+      border-radius: 15px;
+      display: block;
+      padding: 5px;
+    }
+    section footer {
+      align-self: end;
+      font-size: 10px;
+      padding: 16px;
+    }
+    aside {
+      padding: 8px;
+      position: relative;
+     height: 80vh;
+      display: grid;
+      /*grid-template-columns: repeat(10, 50px);
+      grid-template-rows: repeat(8, 50px);*/
+    grid-auto-columns: minmax(60px, auto);
+    grid-auto-rows: minmax(60px, auto);
+      grid-template-areas: 
+      "i1 i1 i1 i1 i2 i2 i3 i3 . ."
+      "i1 i1 i1 i1 i2 i2 i3 i3 . ."
+       ". . i4 i4 i5 i5 i5 i5 . ."
+       ". . i4 i4 i5 i5 i5 i5 i6 ."
+       "i9 i9 i9 i9 i5 i5 i5 i5 i8 i8"
+       "i9 i9 i9 i9 i5 i5 i5 i5 i8 i8"
+       "i9 i9 i9 i9 i10 i10 i11 . . ."
+       ". . . . i10 i10 . . . ."
+      ;
+      justify-content: end ;
+      align-content: start;
+    }
+    aside figure, aside div {
+      border: 1px solid #000;
+      border-radius: 10px;
+    }
+    aside div img {
+      display:block;
+      width: 100%;
+      height: 100%;
+    }
+    aside .img1 {
+      /*background-color:red;
+      grid-column: 3 / span 2;
+      grid-row: 2 / span 1;*/
+      grid-area: i1;
+      justify-self: end;
+      align-self: end;
+      padding: 0px 33px
+    }
+    .img1 img {
+      height: 50px;
+    }
+    aside .img2 {
+      padding: 10px 0px;
+      grid-area: i2;
+      align-self: center;
+    }
+    .img2 img {
+     height: 100px; 
+    }
+    aside .img3 {
+      grid-area: i3;
+      align-self: center;
+    }
+    .img3 img {
+      height: 96px;
+      padding: 12px 0px;
+    }
+    aside .img4 {
+      padding: 25px 0px;
+      grid-area: i4;
+    }
+    .img4 img {
+      height: 70px;
+    }
+    aside .img5 {
+      grid-area: i5;
+      padding: 67px 0px;
+      align-self: center;
+    }
+    .img5 img {
+      height: 120px;
+    }
+    aside .img6 {
+      padding: 10px 0px;
+      align-self: center;
+      grid-area: i6;
+    }
+    .img6 img {
+      height: 40px;
+    }
+    aside .img11 {
+      padding: 10px 0px;
+      align-self: center;
+      grid-area: i11;
+    }
+    .img11 img {
+      height: 40px;
+    }
+    aside .img8 {
+      padding: 10px 0px;
+      grid-area: i8;
+    }
+    .img8 img {
+      height: 110px;
+    }
+    aside .img9 {
+      justify-self: center;
+      grid-area: i9;
+      padding: 0px 20px;
+    }
+    .img9 img {
+      width: 200px;
+    }
+    aside .img10 {
+      grid-area: i10;
+    }
+    
+    aside .img7 {
+      padding: 20px 0px;
+      align-self: center;
+      height: 40px;
+      width: 60px;
+      position: absolute;
+      top: 235px;
+      left: 148px;
+    }
+    .img7 img {
+
+      width: 100%;
+    }
+    footer.mainfooter {
+      background-color: #004782 ;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(3, 1fr);
+      color: #FFF;
+      padding: 16px;
+      justify-content: center;
+    }
+    
+    footer figure {
+      text-align: center;
+    }
+    footer figure figcaption {
+      text-align: justify;
+    }
+    header img {
+      height: 70px;
+    }
+    footer figure img {
+      width:120px;
+    }

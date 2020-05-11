@@ -1,0 +1,17 @@
+:root {
+  background-color: sandybrown;
+}
+.name h1{
+  font-size: 16px;
+  color: #000;
+  padding: 0;
+}
+.head, td, th, tr {
+  border: none;
+}
+tfoot{
+  display: none;
+}
+td.background.no-border {
+  display: none;
+}

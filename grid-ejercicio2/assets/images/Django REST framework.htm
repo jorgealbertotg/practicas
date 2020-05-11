@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://swapi.co/api/species/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="robots" content="NONE,NOARCHIVE">
+<title>Django REST framework</title>
+<link rel="stylesheet" href="./Django REST framework_files/bootstrap.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="./Django REST framework_files/prettify.a987f72342ee.css">
+<link rel="stylesheet" type="text/css" href="./Django REST framework_files/default.14cc59083a7d.css">
+<script charset="utf-8" src="./Django REST framework_files/button.a657e8de41cd5e7b38cde1f36c9ab9c2.js"></script></head>
+<body class="">
+<div class="wrapper">
+<div class="navbar navbar-static-top ">
+<div class="container">
+<span>
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="navbar-brand" href="#"><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 61px; height: 20px;" title="Twitter Tweet Button" src="./Django REST framework_files/tweet_button.7303c29a8108bca4ac5c9ef008ed8164.en.html" data-url="https://swapi.co"></iframe>
+<script id="twitter-wjs" src="./Django REST framework_files/widgets.js"></script><script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+</div>
+<div class="collapse navbar-collapse">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="https://swapi.co/">Home</a></li>
+<li><a href="https://swapi.co/about">About</a></li>
+<li><a href="https://swapi.co/documentation">Documentation</a></li>
+</ul>
+</div>
+</span>
+<ul class="nav navbar-nav pull-right">
+</ul>
+</div>
+</div>
+<div class="container">
+<ul class="breadcrumb">
+<li><a href="https://swapi.co/api/">Api Root</a></li>
+<li class="active"><a href="https://swapi.co/api/species/">Species List</a></li>
+</ul>
+
+<div id="content">
+<form id="get-form" class="pull-right">
+<fieldset>
+<div class="btn-group format-selection">
+<a class="btn btn-primary js-tooltip" href="https://swapi.co/api/species/" rel="nofollow" title="" data-original-title="Make a GET request on the Species List resource">GET</a>
+<button class="btn btn-primary dropdown-toggle js-tooltip" data-toggle="dropdown" title="" data-original-title="Specify a format for the GET request">
+<span class="caret"></span>
+</button>
+<ul class="dropdown-menu">
+<li>
+<a class="js-tooltip format-option" href="https://swapi.co/api/species/?format=json" rel="nofollow" title="" data-original-title="Make a GET request on the Species List resource with the format set to `json`">
+json
+</a>
+</li>
+<li>
+<a class="js-tooltip format-option" href="https://swapi.co/api/species/?format=api" rel="nofollow" title="" data-original-title="Make a GET request on the Species List resource with the format set to `api`">
+api
+</a>
+</li>
+<li>
+<a class="js-tooltip format-option" href="https://swapi.co/api/species/?format=wookiee" rel="nofollow" title="" data-original-title="Make a GET request on the Species List resource with the format set to `wookiee`">
+wookiee
+</a>
+</li>
+</ul>
+</div>
+</fieldset>
+</form>
+<form class="button-form" action="https://swapi.co/api/species/" method="POST">
+<input type="hidden" name="csrfmiddlewaretoken" value="UdWL4EkKbN6LPIFPGgDfyHhGhQSngpTi">
+<input type="hidden" name="_method" value="OPTIONS">
+<button class="btn btn-primary js-tooltip" title="" data-original-title="Make an OPTIONS request on the Species List resource">OPTIONS</button>
+</form>
+<div class="content-main">
+<div class="page-header">
+<h1>Species List</h1>
+</div>
+<div class="request-info" style="clear: both">
+<pre class="prettyprint"><b><span class="pln">GET</span></b><span class="pln"> </span><span class="pun">/</span><span class="pln">api</span><span class="pun">/</span><span class="pln">species</span><span class="pun">/</span></pre>
+</div>
+<div class="response-info">
+<pre class="prettyprint"><span class="meta nocode"><b>HTTP 200 OK</b>
+<b>Vary:</b> <span class="lit">Accept</span>
+<b>Content-Type:</b> <span class="lit">application/json</span>
+<b>Allow:</b> <span class="lit">GET, HEAD, OPTIONS</span>
+
+</span><span class="pun">{</span><span class="pln">
+    </span><span class="str">"count"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">37</span><span class="pun">,</span><span class="pln"> 
+    </span><span class="str">"next"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><a href="https://swapi.co/api/species/?page=2" rel="nofollow"><span class="str">https://swapi.co/api/species/?page=2</span></a><span class="str">"</span><span class="pun">,</span><span class="pln"> 
+    </span><span class="str">"previous"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln"> 
+    </span><span class="str">"results"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Hutt"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"classification"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"gastropod"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"designation"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"sentient"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"average_height"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"300"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"skin_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"green, brown, tan"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"hair_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"n/a"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"eye_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"yellow, red"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"average_lifespan"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"1000"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"homeworld"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><a href="https://swapi.co/api/planets/24/" rel="nofollow"><span class="str">https://swapi.co/api/planets/24/</span></a><span class="str">"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"language"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Huttese"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"people"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="str">"</span><a href="https://swapi.co/api/people/16/" rel="nofollow"><span class="str">https://swapi.co/api/people/16/</span></a><span class="str">"</span><span class="pln">
+            </span><span class="pun">],</span><span class="pln"> 
+            </span><span class="str">"films"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="str">"</span><a href="https://swapi.co/api/films/3/" rel="nofollow"><span class="str">https://swapi.co/api/films/3/</span></a><span class="str">"</span><span class="pun">,</span><span class="pln"> 
+                </span><span class="str">"</span><a href="https://swapi.co/api/films/1/" rel="nofollow"><span class="str">https://swapi.co/api/films/1/</span></a><span class="str">"</span><span class="pln">
+            </span><span class="pun">],</span><span class="pln"> 
+            </span><span class="str">"created"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014-12-10T17:12:50.410000Z"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"edited"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014-12-20T21:36:42.146000Z"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><a href="https://swapi.co/api/species/5/" rel="nofollow"><span class="str">https://swapi.co/api/species/5/</span></a><span class="str">"</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln"> 
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Yoda's species"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"classification"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"mammal"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"designation"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"sentient"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"average_height"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"66"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"skin_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"green, yellow"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"hair_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"brown, white"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"eye_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"brown, green, yellow"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"average_lifespan"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"900"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"homeworld"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><a href="https://swapi.co/api/planets/28/" rel="nofollow"><span class="str">https://swapi.co/api/planets/28/</span></a><span class="str">"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"language"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Galactic basic"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"people"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="str">"</span><a href="https://swapi.co/api/people/20/" rel="nofollow"><span class="str">https://swapi.co/api/people/20/</span></a><span class="str">"</span><span class="pln">
+            </span><span class="pun">],</span><span class="pln"> 
+            </span><span class="str">"films"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="str">"</span><a href="https://swapi.co/api/films/2/" rel="nofollow"><span class="str">https://swapi.co/api/films/2/</span></a><span class="str">"</span><span class="pun">,</span><span class="pln"> 
+                </span><span class="str">"</span><a href="https://swapi.co/api/films/5/" rel="nofollow"><span class="str">https://swapi.co/api/films/5/</span></a><span class="str">"</span><span class="pun">,</span><span class="pln"> 
+                </span><span class="str">"</span><a href="https://swapi.co/api/films/4/" rel="nofollow"><span class="str">https://swapi.co/api/films/4/</span></a><span class="str">"</span><span class="pun">,</span><span class="pln"> 
+                </span><span class="str">"</span><a href="https://swapi.co/api/films/6/" rel="nofollow"><span class="str">https://swapi.co/api/films/6/</span></a><span class="str">"</span><span class="pun">,</span><span class="pln"> 
+                </span><span class="str">"</span><a href="https://swapi.co/api/films/3/" rel="nofollow"><span class="str">https://swapi.co/api/films/3/</span></a><span class="str">"</span><span class="pln">
+            </span><span class="pun">],</span><span class="pln"> 
+            </span><span class="str">"created"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014-12-15T12:27:22.877000Z"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"edited"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014-12-20T21:36:42.148000Z"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><a href="https://swapi.co/api/species/6/" rel="nofollow"><span class="str">https://swapi.co/api/species/6/</span></a><span class="str">"</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln"> 
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Trandoshan"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"classification"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"reptile"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"designation"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"sentient"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"average_height"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"200"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"skin_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"brown, green"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"hair_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"none"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"eye_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"yellow, orange"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"average_lifespan"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"unknown"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"homeworld"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><a href="https://swapi.co/api/planets/29/" rel="nofollow"><span class="str">https://swapi.co/api/planets/29/</span></a><span class="str">"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"language"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Dosh"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"people"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="str">"</span><a href="https://swapi.co/api/people/24/" rel="nofollow"><span class="str">https://swapi.co/api/people/24/</span></a><span class="str">"</span><span class="pln">
+            </span><span class="pun">],</span><span class="pln"> 
+            </span><span class="str">"films"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="str">"</span><a href="https://swapi.co/api/films/2/" rel="nofollow"><span class="str">https://swapi.co/api/films/2/</span></a><span class="str">"</span><span class="pln">
+            </span><span class="pun">],</span><span class="pln"> 
+            </span><span class="str">"created"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014-12-15T13:07:47.704000Z"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"edited"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014-12-20T21:36:42.151000Z"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><a href="https://swapi.co/api/species/7/" rel="nofollow"><span class="str">https://swapi.co/api/species/7/</span></a><span class="str">"</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln"> 
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Mon Calamari"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"classification"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"amphibian"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"designation"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"sentient"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"average_height"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"160"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"skin_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"red, blue, brown, magenta"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"hair_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"none"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"eye_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"yellow"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"average_lifespan"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"unknown"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"homeworld"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><a href="https://swapi.co/api/planets/31/" rel="nofollow"><span class="str">https://swapi.co/api/planets/31/</span></a><span class="str">"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"language"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Mon Calamarian"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"people"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="str">"</span><a href="https://swapi.co/api/people/27/" rel="nofollow"><span class="str">https://swapi.co/api/people/27/</span></a><span class="str">"</span><span class="pln">
+            </span><span class="pun">],</span><span class="pln"> 
+            </span><span class="str">"films"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="str">"</span><a href="https://swapi.co/api/films/3/" rel="nofollow"><span class="str">https://swapi.co/api/films/3/</span></a><span class="str">"</span><span class="pln">
+            </span><span class="pun">],</span><span class="pln"> 
+            </span><span class="str">"created"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014-12-18T11:09:52.263000Z"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"edited"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014-12-20T21:36:42.153000Z"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><a href="https://swapi.co/api/species/8/" rel="nofollow"><span class="str">https://swapi.co/api/species/8/</span></a><span class="str">"</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln"> 
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Ewok"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"classification"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"mammal"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"designation"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"sentient"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"average_height"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"100"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"skin_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"brown"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"hair_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"white, brown, black"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"eye_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"orange, brown"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"average_lifespan"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"unknown"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"homeworld"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><a href="https://swapi.co/api/planets/7/" rel="nofollow"><span class="str">https://swapi.co/api/planets/7/</span></a><span class="str">"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"language"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Ewokese"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"people"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="str">"</span><a href="https://swapi.co/api/people/30/" rel="nofollow"><span class="str">https://swapi.co/api/people/30/</span></a><span class="str">"</span><span class="pln">
+            </span><span class="pun">],</span><span class="pln"> 
+            </span><span class="str">"films"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="str">"</span><a href="https://swapi.co/api/films/3/" rel="nofollow"><span class="str">https://swapi.co/api/films/3/</span></a><span class="str">"</span><span class="pln">
+            </span><span class="pun">],</span><span class="pln"> 
+            </span><span class="str">"created"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014-12-18T11:22:00.285000Z"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"edited"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014-12-20T21:36:42.155000Z"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><a href="https://swapi.co/api/species/9/" rel="nofollow"><span class="str">https://swapi.co/api/species/9/</span></a><span class="str">"</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln"> 
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Sullustan"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"classification"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"mammal"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"designation"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"sentient"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"average_height"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"180"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"skin_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"pale"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"hair_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"none"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"eye_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"black"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"average_lifespan"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"unknown"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"homeworld"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><a href="https://swapi.co/api/planets/33/" rel="nofollow"><span class="str">https://swapi.co/api/planets/33/</span></a><span class="str">"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"language"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Sullutese"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"people"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="str">"</span><a href="https://swapi.co/api/people/31/" rel="nofollow"><span class="str">https://swapi.co/api/people/31/</span></a><span class="str">"</span><span class="pln">
+            </span><span class="pun">],</span><span class="pln"> 
+            </span><span class="str">"films"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="str">"</span><a href="https://swapi.co/api/films/3/" rel="nofollow"><span class="str">https://swapi.co/api/films/3/</span></a><span class="str">"</span><span class="pln">
+            </span><span class="pun">],</span><span class="pln"> 
+            </span><span class="str">"created"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014-12-18T11:26:20.103000Z"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"edited"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014-12-20T21:36:42.157000Z"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><a href="https://swapi.co/api/species/10/" rel="nofollow"><span class="str">https://swapi.co/api/species/10/</span></a><span class="str">"</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln"> 
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Neimodian"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"classification"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"unknown"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"designation"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"sentient"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"average_height"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"180"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"skin_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"grey, green"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"hair_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"none"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"eye_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"red, pink"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"average_lifespan"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"unknown"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"homeworld"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><a href="https://swapi.co/api/planets/18/" rel="nofollow"><span class="str">https://swapi.co/api/planets/18/</span></a><span class="str">"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"language"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Neimoidia"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"people"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="str">"</span><a href="https://swapi.co/api/people/33/" rel="nofollow"><span class="str">https://swapi.co/api/people/33/</span></a><span class="str">"</span><span class="pln">
+            </span><span class="pun">],</span><span class="pln"> 
+            </span><span class="str">"films"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="str">"</span><a href="https://swapi.co/api/films/4/" rel="nofollow"><span class="str">https://swapi.co/api/films/4/</span></a><span class="str">"</span><span class="pln">
+            </span><span class="pun">],</span><span class="pln"> 
+            </span><span class="str">"created"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014-12-19T17:07:31.319000Z"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"edited"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014-12-20T21:36:42.160000Z"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><a href="https://swapi.co/api/species/11/" rel="nofollow"><span class="str">https://swapi.co/api/species/11/</span></a><span class="str">"</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln"> 
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Gungan"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"classification"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"amphibian"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"designation"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"sentient"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"average_height"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"190"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"skin_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"brown, green"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"hair_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"none"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"eye_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"orange"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"average_lifespan"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"unknown"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"homeworld"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><a href="https://swapi.co/api/planets/8/" rel="nofollow"><span class="str">https://swapi.co/api/planets/8/</span></a><span class="str">"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"language"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Gungan basic"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"people"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="str">"</span><a href="https://swapi.co/api/people/36/" rel="nofollow"><span class="str">https://swapi.co/api/people/36/</span></a><span class="str">"</span><span class="pun">,</span><span class="pln"> 
+                </span><span class="str">"</span><a href="https://swapi.co/api/people/37/" rel="nofollow"><span class="str">https://swapi.co/api/people/37/</span></a><span class="str">"</span><span class="pun">,</span><span class="pln"> 
+                </span><span class="str">"</span><a href="https://swapi.co/api/people/38/" rel="nofollow"><span class="str">https://swapi.co/api/people/38/</span></a><span class="str">"</span><span class="pln">
+            </span><span class="pun">],</span><span class="pln"> 
+            </span><span class="str">"films"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="str">"</span><a href="https://swapi.co/api/films/5/" rel="nofollow"><span class="str">https://swapi.co/api/films/5/</span></a><span class="str">"</span><span class="pun">,</span><span class="pln"> 
+                </span><span class="str">"</span><a href="https://swapi.co/api/films/4/" rel="nofollow"><span class="str">https://swapi.co/api/films/4/</span></a><span class="str">"</span><span class="pln">
+            </span><span class="pun">],</span><span class="pln"> 
+            </span><span class="str">"created"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014-12-19T17:30:37.341000Z"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"edited"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014-12-20T21:36:42.163000Z"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><a href="https://swapi.co/api/species/12/" rel="nofollow"><span class="str">https://swapi.co/api/species/12/</span></a><span class="str">"</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln"> 
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Toydarian"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"classification"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"mammal"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"designation"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"sentient"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"average_height"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"120"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"skin_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"blue, green, grey"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"hair_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"none"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"eye_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"yellow"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"average_lifespan"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"91"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"homeworld"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><a href="https://swapi.co/api/planets/34/" rel="nofollow"><span class="str">https://swapi.co/api/planets/34/</span></a><span class="str">"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"language"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Toydarian"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"people"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="str">"</span><a href="https://swapi.co/api/people/40/" rel="nofollow"><span class="str">https://swapi.co/api/people/40/</span></a><span class="str">"</span><span class="pln">
+            </span><span class="pun">],</span><span class="pln"> 
+            </span><span class="str">"films"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="str">"</span><a href="https://swapi.co/api/films/5/" rel="nofollow"><span class="str">https://swapi.co/api/films/5/</span></a><span class="str">"</span><span class="pun">,</span><span class="pln"> 
+                </span><span class="str">"</span><a href="https://swapi.co/api/films/4/" rel="nofollow"><span class="str">https://swapi.co/api/films/4/</span></a><span class="str">"</span><span class="pln">
+            </span><span class="pun">],</span><span class="pln"> 
+            </span><span class="str">"created"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014-12-19T17:48:56.893000Z"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"edited"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014-12-20T21:36:42.165000Z"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><a href="https://swapi.co/api/species/13/" rel="nofollow"><span class="str">https://swapi.co/api/species/13/</span></a><span class="str">"</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln"> 
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Dug"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"classification"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"mammal"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"designation"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"sentient"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"average_height"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"100"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"skin_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"brown, purple, grey, red"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"hair_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"none"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"eye_colors"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"yellow, blue"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"average_lifespan"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"unknown"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"homeworld"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><a href="https://swapi.co/api/planets/35/" rel="nofollow"><span class="str">https://swapi.co/api/planets/35/</span></a><span class="str">"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"language"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Dugese"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"people"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="str">"</span><a href="https://swapi.co/api/people/41/" rel="nofollow"><span class="str">https://swapi.co/api/people/41/</span></a><span class="str">"</span><span class="pln">
+            </span><span class="pun">],</span><span class="pln"> 
+            </span><span class="str">"films"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="str">"</span><a href="https://swapi.co/api/films/4/" rel="nofollow"><span class="str">https://swapi.co/api/films/4/</span></a><span class="str">"</span><span class="pln">
+            </span><span class="pun">],</span><span class="pln"> 
+            </span><span class="str">"created"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014-12-19T17:53:11.214000Z"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"edited"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2014-12-20T21:36:42.167000Z"</span><span class="pun">,</span><span class="pln"> 
+            </span><span class="str">"url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"</span><a href="https://swapi.co/api/species/14/" rel="nofollow"><span class="str">https://swapi.co/api/species/14/</span></a><span class="str">"</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">]</span><span class="pln">
+</span><span class="pun">}</span></pre>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<script src="./Django REST framework_files/jquery-1.8.1-min.1565a889b7d5.js" type="text/javascript"></script>
+<script src="./Django REST framework_files/bootstrap.min.abda843684d0.js" type="text/javascript"></script>
+<script src="./Django REST framework_files/prettify-min.709bfcc456c6.js" type="text/javascript"></script>
+<script src="./Django REST framework_files/default.33da14300902.js" type="text/javascript"></script>
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Django REST framework_files/widget_iframe.7303c29a8108bca4ac5c9ef008ed8164.html" title="Twitter settings iframe" style="display: none;"></iframe></body><div id="screen-shader" style="
+            transition: opacity 0.1s ease 0s; 
+            z-index: 2147483647;
+            margin: 0; 
+            border-radius: 0; 
+            padding: 0; 
+            background: #111111; 
+            pointer-events: none; 
+            position: fixed; 
+            top: -10%; 
+            right: -10%; 
+            width: 120%; 
+            height: 120%; 
+            opacity: 0.3200;
+            mix-blend-mode: multiply; 
+            display: none;
+        "></div></html>

@@ -1,0 +1,64 @@
+
+table {
+  table-layout:fixed;
+  width:100%;
+  border-collapse: collapse;
+}
+
+.head {
+  border:none;
+  border-bottom:1px solid #2196F3;
+  color:#2196F3;
+  padding:32px 0px 10px 10px;
+  text-align:left;
+  text-transform:uppercase;
+}
+
+img.user {
+  width:120px;
+  display:block;
+  margin:auto;
+}
+
+img.pie {
+  width:100%;
+  display:block;
+  margin:auto;
+}
+
+.padding {
+  padding:8px;
+}
+
+.padding-top {
+  padding-top:16px;
+}
+
+.background {
+  background-color:lightgray;
+}
+
+.name {
+  border:none;
+}
+
+.name h1 {
+  border:2px dotted gray;
+  color:gray;
+  text-align:center;
+  padding:24px 0px;
+}
+
+td, th {
+  border:1px solid gray;
+  padding:8px;
+}
+
+.no-border {
+  border:none;
+}
+
+.underline {
+  font-weight:normal;
+  text-decoration:underline;
+}

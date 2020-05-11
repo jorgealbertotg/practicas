@@ -1,0 +1,33 @@
+.main-container {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: tomato;
+  grid-template-areas: "header header header" "izquierdo contenido derecho" "footer footer footer";
+}
+
+.header-container {
+  grid-area: header;
+  background-color: royalblue;
+}
+
+.aside-left-container {
+  grid-area: izquierdo;
+  background-color: seagreen;
+}
+
+.article-container {
+  grid-area: contenido;
+  background-color: slateblue;
+}
+
+.aside-right-container {
+  grid-area: derecho;
+  background-color: teal;
+}
+
+.footer-container {
+  grid-area: footer;
+  background-color: yellow;
+}

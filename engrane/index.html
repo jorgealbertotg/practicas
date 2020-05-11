@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engrane</title>
+  <style>
+    :root {
+      background-color: #111;
+    }
+    #engrane {
+      position: absolute;
+      background-color: #eee;
+      top: 100px;
+      left: 100px;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      transform: scale(0);
+      animation-name: circulo;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+    }
+    #inside {
+      position: absolute;
+      background-color: red;
+      top: 150px;
+      left: 75px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      opacity: 0;
+      animation-name: centro;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+    }
+    @keyframes centro {
+      30% {
+        opacity: 0.0;
+      }
+      100% {
+        opacity: 1.0;
+      }
+    }
+    @keyframes circulo {
+      100% {
+        transform: scale(1) rotate(720deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="engrane">
+    <div id="inside"></div>
+  </div>
+</body>
+</html>
