@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAX</title>
+</head>
+<style>
+  table {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  .hidden {
+    display: none;
+  }
+  .visible {
+    display: block;
+  }
+  table tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+  table tr:nth-child(odd) {
+      background-color: #fff;
+  }
+  table tr {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+  }
+  table td, table th {
+    text-align: center;
+    padding: 5px;
+  }
+  button {
+    text-transform: uppercase;
+    border: 1px solid #3bf388;
+    display: block;
+    margin: 1em;
+    font-weight: 500;
+    padding: 20px 10px;
+    text-align: center;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #2ecc71;
+    color: #FFF;
+    box-shadow: 0 10px 10px -5px #ccc;
+  }
+  .loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  div button {
+    display: inline-block;
+    margin: 0;
+    background-color: #FFF;
+    color: #2ecc71
+  }
+  .statistics > section{
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px -5px #ccc;
+    padding: 10px 20px;
+    margin: 10px;
+  }
+  .statistics > section section {
+    border: 1px solid #eee;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  }
+  .statistics > section section p {
+    border-radius: 5px;
+    background-color: #eee;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+  }
+</style>
+<body>
+  <button id="ajaxButton" type="button">Make a request</button>
+  <script src="ajax.js"></script>
+</body>
+</html>
