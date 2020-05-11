@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+      <title>
+	    CV
+	  </title>
+  </head>
+
+  <body>
+	<script type="text/javascript">
+	
+      Window.onload(iniciar());
+
+	  function iniciar() {
+	    alert("Bienvenido a mi CV");
+	  }
+
+    </script>
+	
+	<style type="text/css">
+	  	
+      .name {
+	    font-size: 25px;
+	    font-style: bold;
+	    margin: 32px 16px 8px 16px;
+	    color: blue;
+	  }
+
+	  .section {
+	    margin-bottom: 16px;
+	  }
+
+	  h2.title {
+	    border-bottom: 1px solid blue;
+	    color: blue;
+	    padding: 16px 0px;
+	    font-size: 18px;
+	  }
+
+	  h3 {font-size:16px;}
+
+	  h4 {font-size:14px;}
+
+	  .contenido {
+	    padding:32px;
+	    text-align: justify;
+		border:1px dotted gray;
+		height:400px;
+	  }
+
+	  ul {margin:0px;}
+
+	  .principal {
+	    margin: 16px;
+	  }
+
+	  img.pie {width:100%;}
+
+	  img.user{
+	    height:90px;
+	    display:block;
+	    float:left
+	  }
+
+	  h1 {float:left;}
+
+	  .header {
+	    overflow:hidden;
+	    margin:8px;
+		padding:8px;
+	  }
+
+	  ul li span {color:blue;}
+
+	  .return_menu {text-align:right;}
+
+	  .menu ul li, .return_menu a {
+	    display:inline-block;
+		text-decoration:none;
+		padding:8px;
+		border: 1px solid gray;
+	  }
+
+	  .menu ul li a, .return_menu a {
+	    text-decoration:none;
+		color:#000;
+		font-size:13px;
+	  }
+
+	  #menu {margin:16px 0px;}
+
+	</style>
+
+    <div class="header">	
+      <img src="usuario.jpg" class="user" />
+      <h1 class="name">
+        Jorge Alberto Tolentino Garcia
+	  </h1>
+	</div>
+	
+	<div id="menu" class="menu">
+	  <ul>
+	    <li><a href="#about">Acerca de mi</a></li>
+	    <li><a href="#experience">Experiencia</a></li>
+	    <li><a href="#school">Carrera academica</a></li>
+	    <li><a href="#skills">Skills</a></li>
+	    <li><a href="#interests">Intereses</a></li>
+		<li><a href="#contact">Contacto</a></li>
+		<li><a href="https://es-la.facebook.com/" target="_blank">Facebook</a></li>
+		<li><a href="pets/index.html" target="_self">Mis mascotas</a></li>
+	  </ul>
+	</div>
+
+    <div class="principal">
+	
+	  <div id="about" class="section">
+	    <h2 class="title">
+	      Acerca de mi
+	    </h2>
+	
+	    <p class="contenido">
+	      Estudiante de Ingenieria en Sistemas Computacionales en la Escuela Superior de Computo.
+		</p>
+
+		<p class="return_menu">
+		  <a href="#menu">Ir al principio</a>
+		</p>
+	  </div>
+	
+	  <div id="experience" class="section">
+	    <h2 class="title">
+	      Experiencia
+	    </h2>
+	    <div class="contenido">
+		  <h3>Proyectos</h3>
+		  <p>Desarrollo de un sistema para la ESEO utilizando Laravel, Angular y Ionic.</p>
+		  
+		  <h3>Practicas escolares</h3>
+		  <ul>
+		    <li>Desarrollo de sistemas distribuidos</li>
+		    <li>Desarrollo de paginas web</li>
+		    <li>Desarrollo de aplicaciones moviles</li>
+		  </ul>
+		
+		  <h4>Aplicaciones moviles</h4>
+		  <ol>
+		    <li>Aplicaiones Android utilizando Java</li>
+		    <li>Aplicaciones moviles utilizando Java ME</li>
+		  </ol>
+		</div>
+
+		<p class="return_menu">
+		  <a href="#menu">Ir al principio</a>
+		</p>
+	  </div>
+	
+	  <div id="school" class="section">
+	    <h2 class="title">
+	      Carrera academica
+	    </h2>
+	    <div class="contenido">
+	      <ul>
+	        <li>Ingeneria en Sistemas Computacionales en ESCOM.</li>
+		    <li>Ingenieria trunca en Mecanica-Electronica en la UPVM.</li>
+	      </ul>
+		</div>
+
+		<p class="return_menu">
+		  <a href="#menu">Ir al principio</a>
+		</p>
+	  </div>
+		
+	  <div id="skills" class="section">
+	    <h2 class="title">
+		  Skills
+	    </h2>
+	    <div class="contenido">
+		  <ol>
+		    <li>Implementacion de <span>C</span>, <span>C++</span>, <span>Java</span> en practicas y proyectos escolares.</li>
+		    <li>Implementacion de Android estudio en practicas y proyectos escolares.</li>
+		    <li>Implementacion de <span>HTML</span>, <span>CSS</span> y <span>Javascript</span> en practicas y proyectos escolares.</li>
+		    <li>Uso de los frameworks <span>Angular 7</span>, <span>Laravel</span> y <span>Inonic 4</span> en proyecto de titulacion.</li>
+	      </ol>
+		</div>
+		
+		<p class="return_menu">
+		  <a href="#menu">Ir al principio</a>
+		</p>
+	  </div>
+
+	  <div id="interests" class="section">
+	    <h2 class="title">
+	      Intereses
+	    </h2>
+	    <p class="contenido">
+		  Aprendizaje de nuevas tecnologias.
+		</p>
+		
+		<p class="return_menu">
+		  <a href="#menu">Ir al principio</a>
+		</p>
+	  </div>
+		
+	  <div id="contact" class="section">
+	    <h2 class="title">
+	      Contacto
+	    </h2>
+	    <div class="contenido">
+	      <p>
+		    <em>correo:</em>
+		    <strong>jorgealbertotg@gmail.com</strong>
+		  </p>
+		  
+		  <p>
+		    <em>telefono:</em>
+		    <strong>552400 9443</strong>
+		  </p>
+
+		  <p>
+		    <em>pagina personal:</em>
+		    <strong>
+			  <a href="pets/index.html" target="_self">Mis mascotas</a>
+			</strong>
+		  </p>
+		  
+		  <p>
+		    <em>Facebook</em>
+		    <strong>
+			  <a href="https://es-la.facebook.com/" target="_blank">Facebook/jorge</a>
+			</strong>
+		  </p>
+		</div>
+
+		<p class="return_menu">
+		  <a href="#menu">Ir al principio</a>
+		</p>
+	  </div>
+	
+	  <img src="pie.jpg" class="pie" />
+	
+    </div>
+  </body>
+</html>

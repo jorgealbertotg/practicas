@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="tolentino">
+    <meta name="description" content="verison del CV con tablas">
+    <title>CV con tablas</title>
+  </head>
+  <body>
+
+    <style>
+      table {
+        table-layout:fixed;
+        width:100%;
+        border-collapse: collapse;
+      }
+
+      .head {
+        border:none;
+        border-bottom:1px solid #2196F3;
+        color:#2196F3;
+        padding:32px 0px 10px 10px;
+        text-align:left;
+        text-transform:uppercase;
+      }
+
+      img.user {
+        width:120px;
+        display:block;
+        margin:auto;
+      }
+      
+      img.pie {
+        width:100%;
+        display:block;
+        margin:auto;
+      }
+      
+      .padding {
+        padding:8px;
+      }
+      
+      .padding-top {
+        padding-top:16px;
+      }
+      
+      .background {
+        background-color:lightgray;
+      }
+
+      .name {
+        border:none;
+      }
+
+      .name h1 {
+        border:2px dotted gray;
+        color:gray;
+        text-align:center;
+        padding:24px 0px;
+      }
+      
+      td, th {
+        border:1px solid gray;
+        padding:8px;
+      }
+      
+      .no-border {
+        border:none;
+      }
+      
+      .underline {
+        font-weight:normal;
+        text-decoration:underline;
+      }
+    </style>
+    
+    <table>
+      <thead>
+        <tr>
+          <td colspan="7" class="name">
+            <h1>Tolentino Garcia, Jorge Alberto</h1>
+          </td>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="2" colspan="2" class="background no-border">
+            <img src="usuario.jpg" class="user">
+          </td>
+          <th colspan="5" class="padding head">About me</th>
+        </tr>
+        <tr>
+          <td colspan="5" class="padding no-border">
+            <p>Estudiante de Ingenieria en Sistemas Computacionales en la Escuela Superior de Computo del Instituto Politecnico Nacional.</p>
+          </td>
+        </tr>
+      </tbody>
+
+      <tbody>
+        <tr>
+          <th colspan="7" class="head">Carrera academica</th>
+        </tr>
+        <tr>
+          <th>Nombre de la escuela</th>
+          <td colspan="2">ESCOM</td>
+          <td colspan="2">UPVM</td>
+          <td colspan="2">CBT</td>
+        </tr>
+        <tr>
+          <th>Año</th>
+          <td colspan="2">2019</td>
+          <td colspan="2">2014</td>
+          <td colspan="2">2011</td>
+        </tr>
+        <tr>
+          <th>Grado</th>
+          <td colspan="2">Estudiante</td>
+          <td colspan="2">Licenciatura</td>
+          <td colspan="2">Pasante</td>
+        </tr>
+      </tbody>
+
+      <tbody>
+        <tr>
+          <th colspan="7" class="head">Experiencia profesional</th>
+        </tr>
+        <tr>
+          <th rowspan="4">Empresa</th>
+          <td rowspan="4" colspan="2">Coca Cola</td>
+          <th rowspan="5" colspan="2">Aptitudes desarrolladas</th>
+          <td colspan="2">Liderazgo</td>
+        </tr>
+        <tr>
+          <td colspan="2">Responsabilidad</td>
+        </tr>
+        <tr>
+          <td colspan="2">Trabajo en equipo</td>
+        </tr>
+        <tr>
+          <td colspan="2">Ser proactivo</td>
+        </tr>
+        <tr>
+          <th>
+            <em class="underline">Periodo</em>
+          </th>
+          <td colspan="2">2017-2019</td>
+        </tr>
+        
+        <tr>
+          <th rowspan="4">Empresa</th>
+          <td rowspan="4" colspan="2">Coca Cola</td>
+          <th rowspan="5" colspan="2">Aptitudes desarrolladas</th>
+          <td colspan="2">Liderazgo</td>
+        </tr>
+        <tr>
+          <td colspan="2">Responsabilidad</td>
+        </tr>
+        <tr>
+          <td colspan="2">Trabajo en equipo</td>
+        </tr>
+        <tr>
+          <td colspan="2">Ser proactivo</td>
+        </tr>
+        <tr>
+          <th>
+            <em class="underline">Periodo</em>
+          </th>
+          <td colspan="2">2017-2019</td>
+        </tr>
+
+      </tbody>
+    </table>
+    <table>
+      <tbody>
+        <tr>
+          <th colspan="7" class="head">Skills</th>
+        </tr>
+        <tr>
+          <th colspan="2">Skill</th>
+          <th colspan="5">Valoracion</th>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <colgroup>
+        <col>
+        <col span="4" style="background-color:red;">
+      </colgroup>
+      <tbody>
+        <tr>
+          <td colspan="2">HTML</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <colgroup>
+        <col>
+        <col span="3" style="background-color:green;">
+      </colgroup>
+      <tbody>
+        <tr>
+          <td colspan="2">CSS</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <colgroup>
+        <col>
+        <col span="2" style="background-color:blue;">
+      </colgroup>
+      <tbody>
+        <tr>
+          <td colspan="2">JS</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <tbody>
+        <tr>
+          <th colspan="7" class="head">Contacto</th>
+        </tr>
+        <tr>
+          <td rowspan="2">
+            <em>Casa</em>
+          </td>
+          <td rowspan="2">55 5892 2548</td>
+          <td colspan="2">
+            <em>Calle, Numero</em>
+          </td>
+          <td>Orquidea, 8</td>
+          <td rowspan="4" colspan="2">jorgealbertotg@gmail.com</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <em>Colonia</em>
+          </td>
+          <td>Jardines de Santa Cruz</td>
+        </tr>
+        <tr>
+          <td rowspan="2">
+            <em>Celular</em>
+          </td>
+          <td rowspan="2">55 2400 9443</td>
+          <td colspan="2">
+            <em>Alcaldia</em>
+          </td>
+          <td>Tultepec</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <em>Pais/Ciudad</em>
+          </td>
+          <td>Mexico/Mexico</td>
+        </tr>
+        <tr>
+          <th colspan="2">Telefono</th>
+          <th colspan="3">Direccion</th>
+          <th colspan="2">Email</th>
+        </tr>
+      </tbody>
+
+      <tbody>
+        <tr>
+          <th colspan="7" class="head">Intereses</th>
+        </tr>
+        <tr>
+          <td colspan="2" rowspan="2">Tecnologia</td>
+          <td colspan="2">Node JS</td>
+          <td colspan="2" rowspan="2">Musica</td>
+          <td>Bateria</td>
+        </tr>
+        
+        <tr>
+          <td colspan="2">React js</td>
+          <td>Guitarra</td>
+        </tr>
+        
+        <tr>
+          <td colspan="2" rowspan="2">Lenguajes</td>
+          <td colspan="2">Typescript</td>
+          <td colspan="2" rowspan="2">Otros</td>
+          <td>Lectura</td>
+        </tr>
+        
+        <tr>
+          <td colspan="2">Java</td>
+          <td>Poesia</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="7" class="padding-top no-border">
+            <img src="pie.jpg" class="pie">
+          </td>
+        </tr>
+      </tfoot>
+
+    </table>
+
+  </body>
+</html>

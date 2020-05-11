@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Semantica HTML</title>
+    <style>
+      
+      .contenido-span {
+        color: tomato;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>Ejercicio de Semántica</h1>
+      <h2>Este archivo sera parte de las evidencias del curso HTML</h2>
+      <nav>
+        <a href="">Inicio</a>
+        <a href="">Nosotros</a>
+        <a href="">Ejemplos</a>
+        <a href="">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1></h1>
+      <p></p>
+
+      <!-- Cuando no tenga sentido usar section -->
+      <div class="emergente">
+        ventana emergente
+        <table></table>
+      </div>
+      <!--
+        <span style="color: aqua">Estamoes en el contenido principal de HTML</span>
+      -->
+      <span>Estamos en el contenido principal de HTML</span>
+      <article>
+
+        <section tabindex="1">
+          <figure>
+            <img src="pet1.png" alt="imagen de un cachorro de perro">
+            
+            <!-- Descripcion de la imagen asociada -->
+            <figcaption>Esta imagen muestra un cahorro de perro labrador en primer plano</figcaption>
+          </figure>
+        </section>
+
+        <section tabindex="'-1'">
+          <audio controls loop>
+            <source src="audio.mp3" type="audio/mpeg">
+            <source src="audio.ogg" type="audio/ogg">
+            Tu navegador no soporta el tipo de archivo insertado.
+          </audio>
+        </section>
+
+        <section tabindex="3">
+          <video controls loop width="320" height="240">
+            <source src="foo.mp4" type="video/mp4">
+            <source src="foo.flv" type="video/flv">
+            El navegador no soporta el tipo de archivo especificado.
+          </video>
+          <embed src="helloworld.swf">
+        </section>
+
+      </article>
+
+      <aside>Informacion secundaria</aside>
+    </main>
+
+    <aside>Informacion relacionada</aside>
+    <footer>
+      <div class="informacion">
+        <p>
+          Estamos hablando del tema X, <a href="https://google.com.mx">para mas información acerca de este tema</a>
+        </p>
+      </div>
+      <div class="mapa-de-sitio">...</div>
+    </footer>
+    
+  </body>
+</html>

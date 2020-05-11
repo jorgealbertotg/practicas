@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+  </head>
+  <body>
+    <style>
+
+      body {
+        background-color: tomato;
+        font-size:20px;
+        color:#FFF;
+      }
+
+      p {
+        margin: 0px;
+      }
+
+      textarea {
+        resize: none;
+        width:400px;
+        height:250px;
+        display:block;
+        margin:auto;
+      }
+
+      fieldset, p.center {
+        width:300px;
+      }
+
+      .personal label, .poderes label, .seguridad label, .center label {
+        display:block;
+      }
+
+      .personal input, .poderes select, .seguridad input[type="text"] {
+        width:100%;
+      }
+
+      .personal {
+        background-color: teal;
+      }
+
+      .poderes {
+        background-color: rebeccapurple;
+      }
+      
+      .poderes label:not(.genero-head) {
+        display:inline;
+      }
+
+      .seguridad {
+        background-color:royalblue;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      input[type="submit"], input[type="reset"] {
+        background-color: olive;
+        font-size:20px;
+        border-radius:10px;
+        width:150px;
+        color:#FFF;
+      }
+
+    </style>
+    <h1>Membresia de súper heroe</h1>
+    <form method="POST" enctype="application/x-www-form-urlencoded" oninput="suma.value= parseInt(valor1.value)+parseInt(valor2.value)">
+      
+      <fieldset class="personal">
+        <legend>Datos Personales</legend>
+        
+        <p>
+          <label for="userName">Escribe tu nombre:</label>
+          <input type="text" id="userName" name="userName" placeholder="Nombre">
+        </p>
+
+        <p>
+          <label for="userLastName">Escribe tu apellido:</label>
+          <input type="text" id="userLastName" name="userLastName" placeholder="Apellido">
+        </p>
+
+        <p>
+          <label for="userEmail">Escribe tu correo:</label>
+          <input type="email" id="userEmail" name="userEmail" placeholder="correo@email.com" oncopy="return false" onpaste="return false">
+        </p>
+
+        <p>
+          <label for="userPassword">Ingresa tu contraseña:</label>
+          <input type="password" id="userPassword" name="userPassword" placeholder="Contraseña" oncopy="return false" onpaste="return false">
+        </p>
+
+        <p>
+          <label for="userBirthday">Fecha de cumpleaños:</label>
+          <input type="date" id="userBirthday" name="userBirthday" min="2015-01-01" max="2021-01-01">
+        </p>
+
+      </fieldset>
+
+      <fieldset class="poderes">
+        <legend>Poderes</legend>
+
+        <p>
+          <label>Elige un poder que poseas</label>
+          <select>
+            <option>Adherencia</option>
+            <option>Agilidad sobrehumana</option>
+            <option>Aeroquinesis</option>
+            <option>Cambio de forma</option>
+            <option>Campo de fuerza</option>
+            <option>Clariaudiencia</option>
+            <option>Deflexion</option>
+            <option>Duplicacion</option>
+            <option>Geoquinesis</option>
+            <option>Ilusion</option>
+        </select>
+        </p>
+
+        <p>
+          <label>Elige tres habilidades que quieras poseer</label>
+          <select multiple>
+            <option>Adherencia</option>
+            <option>Agilidad sobrehumana</option>
+            <option>Aeroquinesis</option>
+            <option>Cambio de forma</option>
+            <option>Campo de fuerza</option>
+            <option>Clariaudiencia</option>
+            <option>Deflexion</option>
+            <option>Duplicacion</option>
+            <option>Geoquinesis</option>
+            <option>Ilusion</option>
+          </select>
+        </p>
+
+        <p class="genero">
+          <label class="genero-head">Genero</label>
+          
+          <label>Hombre</label>
+          <input type="radio" name="genero" value="hombre">
+          
+          <label>Mujer</label>
+          <input type="radio" name="genero" value="mujer">
+        
+          <label>Otro</label>
+          <input type="radio" name="genero" value="otro">
+        </p>
+
+      </fieldset>
+      
+      <fieldset class="seguridad">
+        <legend>Cuestiones de seguridad</legend>
+
+        <p>
+          <label>Personaje ciego de marvel</label>
+          <input type="text" placeholder="Respuesta" list="personajes">
+          <datalist id="personajes">
+            <option value="Iron Man">
+            <option value="Thor">
+            <option value="Capitan America">
+            <option value="Spiderman">
+            <option value="Loki">
+            <option value="Wolverine">
+            <option value="Hulk">
+            <option value="Thor">
+            <option value="Daredevil">
+          </datalist>
+        </p>
+
+        <p>
+          <label>Dos numeros que sumados obtengas 4</label>
+        </p>
+
+        <p>
+          <input type="number" id="valor1" value="">+
+        </p>
+
+        <p>
+          <input type="number" id="valor2" value="">=
+        </p>
+
+        <p>
+          <output name="suma" for="campo1 campo2"></output>
+        </p>
+
+      </fieldset>
+      
+      <p class="center">
+        <label for="comentario">Agrega un comentario</label>
+        <textarea id="comentario"></textarea>
+      </p>
+
+      <p class="center">
+        <label for="acepto">Acepto</label>
+        <input type="checkbox" name="acepto" id="acepto">
+      </p>
+
+      <p class="center">
+        <label for="emailp">Enviar correo de promociones</label>
+        <input type="checkbox" name="emailp" id="emailp">
+      </p>
+
+      <p class="center">
+        <input type="reset" value="Limpiar datos">
+      </p>
+
+      <p class="center">
+        <input type="submit" value="Enviar">
+      </p>
+
+    </form>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms HTML</title>
+  </head>
+  <body>
+    <form action="" method="" enctype="" oninput="suma.value= parseInt(valor1.value)+parseInt(valor2.value)">
+
+      <input type="number"  id="valor1">
+      <input type="number"  id="valor2">
+      <output name="suma" for="valor1 valor2"></output>
+
+
+      <input type="text" name="userName" id="userName" placeholder="Nombre" pattern="[A-Za-z]{8}">
+      
+      <input type="text" name="lastName" id="lastName" placeholder="Apellido" autofocus oncopy="return false" onpaste="return false">
+      
+      <textarea name="comentario" id="areaTexto" cols="80" rows="10"></textarea>
+
+      <input type="checkbox" name="aceptar" id="agree" checked>
+
+      <input type="radio" name="genero" value="femenino" id="women" checked>
+      
+      <input type="radio" name="genero" value="masculino" id="men">
+
+      <fieldset id="carData">
+        <legend>Información del automóvil</legend>
+        <label for="brandCar">Marca de automóvil</label>
+        <input type="text" name="marca" id="brandCar" placeholder="Nombre de la marca">
+      </fieldset>
+
+      <input type="text" list="pelis">
+      <datalist id="pelis">
+        <option value="The Mentalist">
+        <option value="Good Doctor">
+        <option value="Dexter">
+      </datalist>
+
+      <input type="submit" value="Enviar">
+
+    </form>
+  </body>
+</html>
