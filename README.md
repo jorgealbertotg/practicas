@@ -1,4 +1,4 @@
-# practicas
+# Practices
 ## html branch: HTML practices
 
 Use the browser to run each practice
