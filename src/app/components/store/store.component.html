@@ -1,0 +1,25 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Custom Toolbar</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-grid-list cols="2" rowHeight="fit">
+  <mat-grid-tile>
+    1</mat-grid-tile>
+  <mat-grid-tile>
+    <app-chips [chips]="chips" (selectChip)="selectChip($event)"></app-chips>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-tab-group color="accent" backgroundColor="primary" (selectedTabChange)="tabChange($event)">
+  <mat-tab label="First">
+    <app-products [products]="storedProducts" (buyProduct)="buyProduct($event)"></app-products>
+  </mat-tab>
+  <mat-tab label="Second">
+    <app-added-products [productsa]="addedFilteredProducts"></app-added-products>
+  </mat-tab>
+  <mat-tab label="Third">
+    Statistics
+  </mat-tab>
+</mat-tab-group>

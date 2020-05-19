@@ -1,0 +1,16 @@
+<mat-paginator [length]="length"
+               [pageSize]="pageSize"
+               [pageSizeOptions]="pageSizeOptions"
+               (page)="paginate($event)">
+</mat-paginator>
+<mat-grid-list cols="6" rowHeight="340px" gutterSize="10px">
+  <mat-grid-tile *ngFor="let product of pageProducts">
+    <app-product [name]="product.name"
+      [category]="product.category" 
+      [currentPrice]="product.price" 
+      [lastPrice]="product.comparativePrice" 
+      [isOffer]="product.isOffer" 
+      [isActive]="product.isActive" 
+      (click)="openDialog(product)"></app-product>
+  </mat-grid-tile>
+</mat-grid-list>

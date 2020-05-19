@@ -1,0 +1,10 @@
+<mat-paginator [length]="length"
+               [pageSize]="pageSize"
+               [pageSizeOptions]="pageSizeOptions"
+               (page)="paginate($event)">
+</mat-paginator>
+<mat-grid-list cols="6" rowHeight="400px">
+  <mat-grid-tile *ngFor="let product of pageProducts">
+    <app-product></app-product>
+  </mat-grid-tile>
+</mat-grid-list>

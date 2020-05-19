@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>{{title | uppercase}} {{currentPrice}} antes {{lastPrice}}</h1>
+<div mat-dialog-content>
+  <p>{{about}}</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-flat-button color="accent" matDialogClose>Cancelar</button>
+  <button mat-flat-button color="primary" (click)="close()">Comprar</button>
+</div>
+

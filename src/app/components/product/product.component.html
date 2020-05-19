@@ -1,0 +1,29 @@
+<mat-card class="example-card">
+  <p>
+    <mat-card-title>
+      <mat-icon color="primary">label_important</mat-icon>
+      {{currentPrice}}
+    </mat-card-title>
+    <mat-card-subtitle>
+      Antes: <span>{{lastPrice}}</span>
+    </mat-card-subtitle>
+  </p>
+  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      <mat-icon>shop</mat-icon>
+      {{name}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <span [ngClass]="{'woman': category === 'mujer', 'man': category === 'hombre', 'young': category === 'joven' }">
+      {{category | titlecase}}
+    </span>
+    <span class="offer" *ngIf="isOffer">
+      Oferta
+    </span>
+    <span [ngClass]="{'active': isActive, 'no-active': !isActive }">
+      {{isActive ? 'Disponible' : 'Agotado'}}
+    </span>
+  </mat-card-actions>
+</mat-card>  
