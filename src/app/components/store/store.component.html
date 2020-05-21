@@ -1,25 +1,25 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span>Custom Toolbar</span>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <img src="../../../assets/logo.png">
+    <span>
+      Tienda de Tolentino
+    </span>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <app-chips [chips]="chips" (selectChip)="selectChip($event)"></app-chips>
   </mat-toolbar-row>
 </mat-toolbar>
 
-<mat-grid-list cols="2" rowHeight="fit">
-  <mat-grid-tile>
-    1</mat-grid-tile>
-  <mat-grid-tile>
-    <app-chips [chips]="chips" (selectChip)="selectChip($event)"></app-chips>
-  </mat-grid-tile>
-</mat-grid-list>
-
-<mat-tab-group color="accent" backgroundColor="primary" (selectedTabChange)="tabChange($event)">
-  <mat-tab label="First">
+<mat-tab-group color="accent" backgroundColor="primary" (selectedTabChange)="tabChange($event)" [selectedIndex]="0">
+  <mat-tab label="Tienda">
     <app-products [products]="storedProducts" (buyProduct)="buyProduct($event)"></app-products>
   </mat-tab>
-  <mat-tab label="Second">
-    <app-added-products [productsa]="addedFilteredProducts"></app-added-products>
+  <mat-tab label="Carrito de compras">
+    <app-added-products [products]="addedFilteredProducts" (remove)="removeProduct($event)"></app-added-products>
   </mat-tab>
-  <mat-tab label="Third">
-    Statistics
+  <mat-tab label="Detalle de cuenta">
+    <app-count [products]="countFilteredProducts"></app-count>
   </mat-tab>
 </mat-tab-group>

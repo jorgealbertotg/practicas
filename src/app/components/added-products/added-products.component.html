@@ -1,10 +1,23 @@
-<mat-paginator [length]="length"
-               [pageSize]="pageSize"
-               [pageSizeOptions]="pageSizeOptions"
-               (page)="paginate($event)">
-</mat-paginator>
-<mat-grid-list cols="6" rowHeight="400px">
-  <mat-grid-tile *ngFor="let product of pageProducts">
-    <app-product></app-product>
-  </mat-grid-tile>
-</mat-grid-list>
+<ng-container *ngIf="pageProducts.length > 0; else noContent">
+  <mat-paginator [length]="length"
+                [pageSize]="pageSize"
+                [pageSizeOptions]="pageSizeOptions"
+                (page)="paginate($event)">
+  </mat-paginator>
+  <mat-grid-list cols="6" rowHeight="400px">
+    <mat-grid-tile *ngFor="let product of pageProducts">
+      <app-product  [guid]="product.guid" 
+        [name]="product.name"
+        [category]="product.category" 
+        [currentPrice]="product.price" 
+        [lastPrice]="product.comparativePrice" 
+        [isOffer]="product.isOffer" 
+        [isActive]="product.isActive" 
+        [removable]="true" 
+        (remove)="removeProduct($event)"></app-product>
+    </mat-grid-tile>
+  </mat-grid-list>
+</ng-container>
+<ng-template #noContent>
+  <app-empty></app-empty>
+</ng-template>

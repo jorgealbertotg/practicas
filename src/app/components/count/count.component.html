@@ -1,0 +1,36 @@
+<mat-table [dataSource]="pageProducts" class="mat-elevation-z8" *ngIf="pageProducts.length > 0; else noContent">
+  <!-- Position Column -->
+  <ng-container matColumnDef="guid">
+    <mat-header-cell *matHeaderCellDef> GUID </mat-header-cell>
+    <mat-cell *matCellDef="let product"> {{product.guid}} </mat-cell>
+    <mat-footer-cell *matFooterCellDef> </mat-footer-cell>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
+    <mat-cell *matCellDef="let product"> {{product.name}} </mat-cell>
+    <mat-footer-cell *matFooterCellDef> </mat-footer-cell>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="price">
+    <mat-header-cell *matHeaderCellDef> Precio anterior </mat-header-cell>
+    <mat-cell *matCellDef="let product"> {{product.price}} </mat-cell>
+    <mat-footer-cell *matFooterCellDef> <strong>Total</strong> </mat-footer-cell>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="comparativePrice">
+    <mat-header-cell *matHeaderCellDef> Precio actual </mat-header-cell>
+    <mat-cell *matCellDef="let product"> {{product.comparativePrice}} </mat-cell>
+    <mat-footer-cell *matFooterCellDef> {{total}} </mat-footer-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  <mat-footer-row *matFooterRowDef="displayedColumns"></mat-footer-row>
+</mat-table>
+<ng-template #noContent>
+  <app-empty></app-empty>
+</ng-template>

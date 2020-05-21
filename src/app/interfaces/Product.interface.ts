@@ -4,4 +4,5 @@ export interface Product {
   about?: string;
   price: string;
   comparativePrice: string;
+  available: boolean;
 }

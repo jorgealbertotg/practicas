@@ -63,6 +63,7 @@ export class ProductsComponent implements OnInit, OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
     this.length = changes.products.currentValue.length;
     this.pageProducts = changes.products.currentValue.slice(0, this.pageSize);
+    console.log(this.pageProducts)
   }
 
   public paginate(event: PageEvent): void {
@@ -78,7 +79,8 @@ export class ProductsComponent implements OnInit, OnChanges {
       title: product.name,
       about: product.about,
       currentPrice: product.price,
-      lastPrice: product.comparativePrice
+      lastPrice: product.comparativePrice,
+      available: product.available
     });
 
     this.dialogService.matDialogRef.afterClosed().subscribe(product => {

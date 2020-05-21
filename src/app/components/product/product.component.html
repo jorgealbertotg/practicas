@@ -1,5 +1,8 @@
 <mat-card class="example-card">
-  <p>
+  <button mat-button color="warn" *ngIf="removable" (click)="removeProduct(guid)">
+    <mat-icon>cancel</mat-icon>    
+  </button>
+  <div>
     <mat-card-title>
       <mat-icon color="primary">label_important</mat-icon>
       {{currentPrice}}
@@ -7,23 +10,23 @@
     <mat-card-subtitle>
       Antes: <span>{{lastPrice}}</span>
     </mat-card-subtitle>
-  </p>
-  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  </div>
+  <img mat-card-image src="https://picsum.photos/200?{{guid}}" loading="lazy" alt="Photo of a Shiba Inu">
   <mat-card-content>
     <p>
       <mat-icon>shop</mat-icon>
       {{name}}
+    </p>  
+    <p>
+      <span [ngClass]="{'woman': category === 'mujer', 'man': category === 'hombre', 'young': category === 'joven' }">
+        {{category | titlecase}}
+      </span>
+      <span class="offer" *ngIf="isOffer">
+        Oferta
+      </span>
+      <span [ngClass]="{'active': isActive, 'no-active': !isActive }">
+        {{isActive ? 'Disponible' : 'Agotado'}}
+      </span>
     </p>
   </mat-card-content>
-  <mat-card-actions>
-    <span [ngClass]="{'woman': category === 'mujer', 'man': category === 'hombre', 'young': category === 'joven' }">
-      {{category | titlecase}}
-    </span>
-    <span class="offer" *ngIf="isOffer">
-      Oferta
-    </span>
-    <span [ngClass]="{'active': isActive, 'no-active': !isActive }">
-      {{isActive ? 'Disponible' : 'Agotado'}}
-    </span>
-  </mat-card-actions>
 </mat-card>  

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, SimpleChanges, OnChanges } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges, OnChanges, Output, EventEmitter } from '@angular/core';
 import { Chip } from 'src/app/interfaces/Chip.interface';
 import { Product } from 'src/app/interfaces/Product.interface';
 import { PageEvent } from '@angular/material/paginator';
@@ -9,7 +9,9 @@ import { PageEvent } from '@angular/material/paginator';
   styleUrls: ['./added-products.component.css']
 })
 export class AddedProductsComponent implements OnInit, OnChanges {
-  @Input() productsa: Product[];
+  @Input() products: Product[];
+  @Output()
+  remove = new EventEmitter<string>();
 
   public pageProducts: Product[];
   public length: number;
@@ -58,14 +60,17 @@ export class AddedProductsComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    this.length = changes.productsa.currentValue.length;
-    this.pageProducts = changes.productsa.currentValue.slice(0, this.pageSize);
+    this.length = changes.products.currentValue.length;
+    this.pageProducts = changes.products.currentValue.slice(0, this.pageSize);
   }
 
   public paginate(event: PageEvent): void {
     const pageStart = event.pageIndex * event.pageSize;
     const pageEnd = pageStart + event.pageSize;
-    this.pageProducts = this.productsa.slice(pageStart, pageEnd);
+    this.pageProducts = this.products.slice(pageStart, pageEnd);
   }
 
+  public removeProduct(guid: string) {
+    this.remove.emit(guid)
+  }
 }

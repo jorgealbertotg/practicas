@@ -1,5 +1,5 @@
-<mat-chip-list aria-label="Fish selection">
-  <mat-chip *ngFor="let chip of chips" [removable]="chip.removable" (removed)="remove(chip)" (click)="select(chip)">
+<mat-chip-list aria-label="Fish selection" [multiple]="true">
+  <mat-chip *ngFor="let chip of chips" color="accent"[selected]="chip.removable" [removable]="chip.removable" (removed)="remove(chip)" (click)="select(chip)">
     {{chip.label}}
     <mat-icon matChipRemove *ngIf="chip.removable">cancel</mat-icon>
   </mat-chip>

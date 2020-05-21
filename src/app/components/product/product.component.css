@@ -3,15 +3,25 @@ p, mat-card-actions, mat-card-content, mat-card-header, mat-card {
 }
 img {
   margin: 0;
+  width: 200px;
 }
 mat-card-header {
   padding: 0;
 }
 mat-card {
-  padding: 8px 0;
-  height: auto;
-  border: 1px solid rgb(218, 218, 218);
+  padding: 10px 3px;
+  border: 1px solid #cecece;
 }
+mat-card:hover {
+  outline: 1px solid skyblue;
+  box-shadow: 1px 1px 10px skyblue;
+  box-shadow: -1px -1px 10px skyblue;
+}
+
+mat-card:hover button {
+  display: block;
+}
+
 mat-card-content {
   margin: 0;
 }
@@ -33,11 +43,17 @@ mat-icon {
 mat-card-content p mat-icon, mat-card-subtitle mat-icon {
   font-size: 20px;
 }
-mat-card-actions {
-  text-align: center;
-  background-color: #fff;
+
+mat-card-content p:nth-child(1) {
+  margin: 5px 0;
 }
-mat-card-actions span {
+mat-card-content p:nth-child(1) mat-icon {
+  font-size: 18px;
+}
+mat-card div {
+  padding: 10px;
+}
+p span {
   font-size: 12px;
   padding: 0 5px;
   margin: 0 2px;
@@ -68,4 +84,12 @@ span.no-active {
   border: 1px solid gray;
   background-color: #dadada;
   color: gray;
+}
+button {
+  position: absolute;
+  right: -15px;
+  top: 0;
+}
+mat-card>button {
+  display: none;
 }

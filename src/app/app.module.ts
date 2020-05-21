@@ -19,9 +19,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatTableModule } from '@angular/material/table';
 import { ProductComponent } from './components/product/product.component';
 import { StoreComponent } from './components/store/store.component';
 import { DialogComponent } from './components/dialog/dialog.component';
+import { CountComponent } from './components/count/count.component';
+import { EmptyComponent } from './components/empty/empty.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,9 @@ import { DialogComponent } from './components/dialog/dialog.component';
     ChipsComponent,
     ProductComponent,
     StoreComponent,
-    DialogComponent
+    DialogComponent,
+    CountComponent,
+    EmptyComponent
   ],
   imports: [
     BrowserModule,
@@ -47,6 +52,7 @@ import { DialogComponent } from './components/dialog/dialog.component';
     MatPaginatorModule,
     MatSelectModule,
     MatDialogModule,
+    MatTableModule,
     HttpClientModule
   ],
   providers: [],

@@ -23,5 +23,6 @@ export class DialogService {
     dialogComponent.about = data.about;
     dialogComponent.currentPrice = data.currentPrice;
     dialogComponent.lastPrice = data.lastPrice;
+    dialogComponent.available = data.available;
   }
 }

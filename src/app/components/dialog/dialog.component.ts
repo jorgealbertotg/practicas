@@ -14,6 +14,7 @@ export class DialogComponent implements OnInit {
   public about: string;
   public currentPrice: string;
   public lastPrice: string;
+  public available: boolean;
 
   constructor(
     public dialogRef: MatDialogRef<DialogComponent>,
