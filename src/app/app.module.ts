@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PlusSidebarSuperiorComponent } from './components/plus-sidebar-superior/plus-sidebar-superior.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PlusSidebarSuperiorComponent
   ],
   imports: [
     BrowserModule,
